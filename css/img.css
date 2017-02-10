@@ -1,0 +1,18 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#image {
+	height: 724px;
+	width: 800px;
+	position: relative;
+}
+
+.images img {
+	height: 300px;
+	width: 300px;
+	float: left;
+	border-right: 5px;
+	box-sizing: border-box;
+}

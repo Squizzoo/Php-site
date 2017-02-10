@@ -1,0 +1,126 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	/*overflow-y: hidden;
+	overflow-x: hidden;*/
+}
+
+body {
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#bg {
+	position: absolute;;
+	left: 450px;
+	right: 453px;
+	height: 974px;
+	width: 1000px;
+}
+
+#logo {
+	background-image: url(../img/logo.jpeg);
+	background-repeat: no-repeat;
+	background-size: 1000px 150px;
+	height: 150px;
+	width: 1000px;
+	position: relative;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom: 2px solid black;
+	box-sizing: border-box;
+}
+
+.prog {
+	text-align: center;
+	color: white;
+	font-family: 'Bungee', cursive;
+}
+
+
+.head h1 {
+ text-align: center;
+ font-family: 'Bungee Inline', cursive;
+}
+
+#menu {
+	background-color: #46B6F2;
+	float: left;
+	position: relative;
+	height: 824px;
+	width: 200px;
+	border-bottom-left-radius: 10px;
+	font-family: 'Bungee', cursive;
+	border-right: 2px solid black;
+	box-sizing: border-box;
+}
+
+.logo {
+	float: left;
+}
+
+#menu h2 {
+	text-align: center;
+}
+
+#listed ul {
+	list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+	 width: 200px;
+	 /*background-color: #46B6F2;*/
+}
+
+#listed li a {
+	display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+	text-align: center;
+	color: black;
+}
+
+#listed li a:hover {
+    background-color: #5A79F4;
+    color: white;
+		border-right: 2px solid black;
+		transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+}
+
+#listed li a:visited {
+  text-decoration: none;
+}
+
+#title {
+	background-color: #5D8AFC;
+	position: relative;
+	float: left;
+	height: 100px;
+	width: 800px;
+	border-bottom: 2px solid black;
+	box-sizing: border-box;
+}
+
+.copy {
+	position: relative;
+	text-align: center;
+	color: #46B6F2;
+}
+
+#content {
+	background-color: #636FED;
+	float: left;
+	height: 724px;
+	width: 800px;
+	border-bottom-right-radius: 10px;
+}
+
+#content iframe {
+	height: 724px;
+	width: 800px;
+	border: none;
+	border-bottom-right-radius: 10px;
+}
