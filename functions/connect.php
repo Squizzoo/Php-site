@@ -1,6 +1,6 @@
 <?php
 function conn() {
-$db =  parse_ini_file("./database/core.ini");
+$db =  parse_ini_file("./config/core.ini");
 //print_r($db);
 
 

@@ -1,20 +1,16 @@
 <?php
 session_start();
 
- include_once 'functions/menu.php';
- include_once 'functions/login.php';
- include_once 'functions/linkTag.php';
- include_once 'functions/actions.php';
- include_once 'database/connect.php';
- //include_once 'functions/linkPhp.php';
+include_once 'functions/linkPhp.php';
 
- $db = conn('database/core.ini');
- $conn = conn();
- $out = menu($db);
- $form = logon($db);
- $css = bootstrap('css');
- $function = actions();
- ?>
+$plugin = plugin();
+$db = conn('config/core.ini');
+$conn = conn();
+$out = menu($db);
+$form = logon($db);
+$css = bootstrap('css');
+$function = actions();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +34,6 @@ session_start();
 			<div id="listed">
 				<ul>
 					<li><?php echo $out; ?></li>
-					<!--<p><a href="https://www.youtube.com/watch?v=CxoNBgTN-sc=1" target="iframe_a">Youtube</a></p>-->
 				</ul>
 			</div>
 		</div>
@@ -52,7 +47,6 @@ session_start();
 		</div>
 		<div id="content">
 			<?php echo $function; ?>
-			<!-- <iframe src="https://en.wikipedia.org/wiki/Computer_programming" name="mijnframe" href="http://www.w3schools.com/"></iframe> -->
 		</div>
 	</div>
 </body>

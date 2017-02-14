@@ -1,16 +1,15 @@
 <?php
-function menu($db)
-{
-	$sql = "SELECT * FROM menu";
+function gallery($db) {
+	$sql = "SELECT * FROM gallery";
 	$result = mysqli_query($db, $sql);
-	$out = "";
+
+	$out2 = "";
 	if (mysqli_num_rows($result) > 0) {
 	    // output data of each row
 	    while($row = mysqli_fetch_assoc($result)) {
-	        $out .=  '<a href="'.$row["href"].'" >' . $row["label"].  '</a>';
+	        $out2 .=  '<a href="'.$row["href"].'" ></a>';
 	    }
 	}
-
-	return $out;
+	return $out2;
 }
  ?>

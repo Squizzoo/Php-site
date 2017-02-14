@@ -1,10 +1,7 @@
 <?php
-function bootstrap($dir) {
-	$plugin = '';
-	$link = glob($dir.'/*.php');
-
-	for ($i = 0; $i < count($link); $i++) {
-		$plugin .= '<link rel=" href="'.$link[$i].'"></br>';
+function plugin() {
+	foreach (glob('functions/*.php') as $plugin) {
+		include_once ($plugin);
 	}
 	return $plugin;
 }
